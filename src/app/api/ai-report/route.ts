@@ -4,7 +4,7 @@ import { db } from "@/lib/drizzle";
 import { aiReports } from "@/db/schema";
 import { eq } from "drizzle-orm";
 
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY! });
+const openai = new OpenAI({ apiKey: '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' });
 
 export async function POST(req: NextRequest) {
   try {
